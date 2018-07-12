@@ -1,0 +1,48 @@
+/*bootstrap navbar-fixed-top fix*/
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 1121px) {
+    body {
+		padding-top: 100px;
+		padding-bottom: 0;
+	}
+}
+
+.add_blocks {
+	float: right;
+}
+	
+.type2 {
+	margin-left: -20px !important;
+	margin-right: -20px !important;
+	padding-left: 20px !important;
+}
+	
+.well-inverse {
+	background-color: transparent;		
+}
+
+@media (max-width: 979px) and (min-width: 767px) {
+	.form-horizontal .control-label {
+		float: none;
+		width: auto;
+		padding-top: 0;
+		text-align: left;
+	}
+	.form-horizontal .controls {
+		margin-left: 0;
+	}
+	.form-horizontal .control-list {
+		padding-top: 0;
+	}
+}

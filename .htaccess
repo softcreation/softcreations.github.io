@@ -1,0 +1,16 @@
+ErrorDocument 404 /404.shtml
+
+RewriteEngine On
+RewriteRule ^.htaccess$ - [F]
+
+RewriteBase /demo/
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?category=$1&content=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?content=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?category=$1&content=index [L]
+
+Options -Indexes
+
+<Files "*.inc.php">
+order allow,deny
+deny from all
+</Files>
